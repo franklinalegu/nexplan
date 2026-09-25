@@ -334,24 +334,3 @@ Nexplan understands WHAT (Product), WHY (Problem), WHO (Users), HOW (Solution), 
 | GitHub `plantext` | `franklinalegu/nexplan` |
 
 All concepts, workflows, and architecture unchanged — only naming/branding updated. No code changes required beyond string replacement.
-
----
-
-## Getting Started (MVP v0.1)
-
-```bash
-pnpm install
-pnpm dev        # http://localhost:3000
-pnpm build
-```
-
-Stack: Next.js 16 + Tailwind 4 + TypeScript. Local-first (localStorage) — Supabase + AI backend next (see `src/lib/mock-ai.ts`).
-
-### Project Structure
-```
-src/app/page.tsx        → Dashboard (Capture → list + filter)
-src/app/ideas/[id]/page → Workspace (Idea/Product/Project/Roadmap/Tasks + Think With Me)
-src/lib/types.ts        → Core entities
-src/lib/storage.ts      → localStorage CRUD
-src/lib/mock-ai.ts      → ponytail: naive heuristics, replace with /api/plan LLM
-```
