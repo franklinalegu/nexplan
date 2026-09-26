@@ -8,21 +8,21 @@
 **Status:** Concept / MVP Definition
 **License Direction:** Open Source
 **Primary Platform:** Web
-**AI Architecture:** Open-source / self-hostable AI
+**AI Architecture:** Opensource / selfhostable AI
 
-> An open-source AI workspace for turning raw ideas into products, projects, roadmaps, and actionable plans.
+> An opensource AI workspace for turning raw ideas into products, projects, roadmaps, and actionable plans.
 
----
+
 
 ## 1. Executive Summary
 
-**Nexplan** is an open-source AI-powered planning workspace designed to help individuals, founders, designers, developers, businesses, teams, and creators transform raw ideas into structured, actionable plans.
+**Nexplan** is an opensource AIpowered planning workspace designed to help individuals, founders, designers, developers, businesses, teams, and creators transform raw ideas into structured, actionable plans.
 
 Most ideas begin as incomplete thoughts:
-- "I want to build an app for students."
-- "I want to launch a new service."
-- "I want to organise a conference."
-- "I have an idea for an AI tool."
+• "I want to build an app for students."
+• "I want to launch a new service."
+• "I want to organise a conference."
+• "I have an idea for an AI tool."
 
 The problem is rarely a lack of ideas. The problem is turning those ideas into something understandable, structured, and executable.
 
@@ -33,13 +33,13 @@ The problem is rarely a lack of ideas. The problem is turning those ideas into s
 
 ## 2. Vision
 
-To make structured planning accessible to everyone by giving every idea an intelligent path from thought to execution. Nexplan should become a general-purpose AI thinking and planning environment.
+To make structured planning accessible to everyone by giving every idea an intelligent path from thought to execution. Nexplan should become a generalpurpose AI thinking and planning environment.
 
 Helps users answer: What am I building? Who is it for? What problem does it solve? Is it defined? What goes in v1? What to build first? Resources? Risks? Next actions? How to improve?
 
 ## 3. Mission
 
-Nexplan helps people turn unstructured ideas into structured products, projects, and actionable plans using open-source AI. The goal is not to generate text — it's to improve thinking and planning.
+Nexplan helps people turn unstructured ideas into structured products, projects, and actionable plans using opensource AI. The goal is not to generate text — it's to improve thinking and planning.
 
 ## 4. The Problem
 
@@ -56,7 +56,7 @@ Example:
 1. Start simple — one sentence input
 2. Clarify before generating
 3. Structure information — ideas become data, not just chat
-4. Preserve user ownership — export, modify, delete, self-host
+4. Preserve user ownership — export, modify, delete, selfhost
 5. AI assists; humans decide
 
 ## 6. Core Concept
@@ -77,7 +77,7 @@ Example:
 ```
 Idea → Product → Project → Execution Plan
 
-## 7-8. Core Workflow
+## 7 and 8 Core Workflow
 
 **Stage 1 — Capture:** Raw idea saved as Idea. e.g. "I want to create a platform where people can organise YouTube learning playlists."
 
@@ -85,7 +85,7 @@ Idea → Product → Project → Execution Plan
 
 **Stage 3 — Explore:** AI generates Problem, Audience, Context, Alternatives, Opportunity, Assumptions, Risks.
 
-## 9-11. Product Planning
+## 9 to 11 Product Planning
 
 Product Plan Structure:
 ```
@@ -97,11 +97,11 @@ Product
 ├── Monetisation / Risks / Open Questions
 ```
 
-**Feature priorities:** MVP (essential), V1 (post-validation), Future (don't distract).
+**Feature priorities:** MVP (essential), V1 (postvalidation), Future (don't distract).
 
 Example MVP: Create account, Create project, Add idea, AI planning, Generate tasks. V1: Collaboration, Templates, Export, Analytics.
 
-## 12-13. Project Planning
+## 12 and 13 Project Planning
 
 ```
 Project
@@ -110,7 +110,7 @@ Project
 ├── Resources / Timeline / Budget / Risks / Owners / Status
 ```
 
-AI breaks Objective into Milestones 1-5: Research → UX → Development → Testing → Launch.
+AI breaks Objective into Milestones 1 to 5: Research → UX → Development → Testing → Launch.
 
 ## 14. "Think With Me" Mode
 
@@ -122,9 +122,9 @@ Defining feature. Instead of "Create a business plan," activate **Think With Me*
 
 ## 16. Roadmap System
 
-Translates strategy into time. Example: Month 1 Research, Month 2 Design, Month 3 Development, Month 4 Testing & Launch. User-adjustable.
+Translates strategy into time. Example: Month 1 Research, Month 2 Design, Month 3 Development, Month 4 Testing & Launch. Useradjustable.
 
-## 17-18. Workspace & Decisions
+## 17 and 18 Workspace and Decisions
 
 **Workspace nav:** Overview / Idea / Product / Project / Roadmap / Tasks / Research / Documents / Decisions / AI Chat / Settings
 
@@ -132,10 +132,10 @@ Translates strategy into time. Example: Month 1 Research, Month 2 Design, Month 
 
 ## 19. Project Memory
 
-Retrieval-augmented context instead of sending entire project each time:
+Retrievalaugmented context instead of sending entire project each time:
 `User → Question → Context Retrieval → Relevant Project Info → Model → Structured Response`
 
-## 20-21. AI Architecture
+## 20 and 21 AI Architecture
 
 ```
                AI INTERFACE
@@ -149,14 +149,14 @@ Retrieval-augmented context instead of sending entire project each time:
 ```
 
 Modular, not tied to one model:
-`AI Provider Interface → Local Model / Self-Hosted / OpenAI-Compatible API / Other Provider`
+`AI Provider Interface → Local Model / SelfHosted / OpenAICompatible API / Other Provider`
 
 If Meta Muse is suitable and licensing permits, evaluate as one supported backend — never a hard dependency.
 
 ## 22. Deployment Modes
 
 **Mode A — Public hosted (nexplan.app):** Free with reasonable limits.
-**Mode B — Self-hosted:** Clone → Configure → Run.
+**Mode B — Selfhosted:** Clone → Configure → Run.
 **Mode C — Private org deployment.**
 
 Open source ≠ unlimited free inference — hosting models costs compute.
@@ -167,14 +167,14 @@ Repo contains: frontend, backend, DB schema, AI orchestration, prompts, planning
 
 ## 24. Tech Stack (v1)
 
-- **Frontend:** Next.js + React
-- **UI:** Tailwind CSS + shadcn/ui
-- **Backend:** Next.js server actions / API routes
-- **DB:** PostgreSQL (Supabase practical option)
-- **Auth:** Supabase Auth (pluggable)
-- **AI:** Open-source/self-hosted via OpenAI-compatible interface
-- **Hosting:** Vercel
-- **Repo:** GitHub
+• **Frontend:** Next.js + React
+• **UI:** Tailwind CSS + shadcn/ui
+• **Backend:** Next.js server actions / API routes
+• **DB:** PostgreSQL (Supabase practical option)
+• **Auth:** Supabase Auth (pluggable)
+• **AI:** Opensource/selfhosted via OpenAIcompatible interface
+• **Hosting:** Vercel
+• **Repo:** GitHub
 
 ## 25. Database Concept
 
@@ -200,7 +200,7 @@ AI returns JSON where possible for rendering as cards/tables/timelines:
 }
 ```
 
-## 27-28. UI
+## 27 and 28 UI
 
 Feels like **Notion + Linear + AI thinking assistant**.
 
@@ -208,7 +208,7 @@ Dashboard: "Good morning. What are you working on? [+ New Idea]" + Recent Ideas 
 
 New Idea flow: `+ New Idea → "What are you thinking about? [I want to build...]" → [Start Planning]`
 
-## 29-32. Lifecycle & Export
+## 29 to 32 Lifecycle and Export
 
 **Idea status:** Raw → Exploring → Defined → Planning → Building → Paused → Completed → Archived
 
@@ -217,7 +217,7 @@ New Idea flow: `+ New Idea → "What are you thinking about? [I want to build...
 
 **Export:** Markdown, JSON, PDF, CSV (tasks). Later: DOCX, Notion, GitHub Issues, Linear, Jira.
 
-## 33-35. Templates / Research / Risks
+## 33 to 35 Templates / Research / Risks
 
 **Templates:** SaaS, Mobile App, Website, AI Tool, etc. + Project templates.
 
@@ -225,13 +225,13 @@ New Idea flow: `+ New Idea → "What are you thinking about? [I want to build...
 
 **Risk register:** Description, Probability, Impact, Mitigation, Status, Owner.
 
-## 36-37. Context & Privacy
+## 36 and 37 Context and Privacy
 
 **AI Context Hierarchy:** GLOBAL (user prefs) → WORKSPACE (projects) → PROJECT (product/tasks/decisions/docs) → CURRENT CONVERSATION
 
-Security: encrypted connections, secure auth, RLS, data isolation, deletion/export/self-hosting.
+Security: encrypted connections, secure auth, RLS, data isolation, deletion/export/selfhosting.
 
-## 38-39. MVP Scope
+## 38 and 39 MVP Scope
 
 **Nexplan MVP:**
 1. Auth (sign up/login/logout)
@@ -248,36 +248,36 @@ Core test: *Can Nexplan reliably take a raw idea and help turn it into a useful 
 
 ## 40. Version Roadmap
 
-- v0.1 Idea Engine — capture & clarify
-- v0.2 Product Planner — idea → spec
-- v0.3 Project Planner — product → execution
-- v0.4 Roadmap — timelines/dependencies
-- v0.5 Research — assumptions/validation
-- v0.6 Documents — structured docs
-- v0.7 Collaboration — teams/shared workspaces
-- v0.8 Integrations — GitHub/Linear/Jira/Notion
-- v1.0 Open AI Planning Platform — self-hosting + multi-backend
+• v0.1 Idea Engine — capture & clarify
+• v0.2 Product Planner — idea → spec
+• v0.3 Project Planner — product → execution
+• v0.4 Roadmap — timelines/dependencies
+• v0.5 Research — assumptions/validation
+• v0.6 Documents — structured docs
+• v0.7 Collaboration — teams/shared workspaces
+• v0.8 Integrations — GitHub/Linear/Jira/Notion
+• v1.0 Open AI Planning Platform — selfhosting + multibackend
 
-## 41. Long-Term Vision — AI Project OS
+## 41 Long Term Vision — AI Project OS
 
 Nexplan understands WHAT (Product), WHY (Problem), WHO (Users), HOW (Solution), WHEN (Roadmap), WHAT NEXT (Tasks), WHY THIS DECISION (Log), WHAT CHANGED (History), WHAT NOW (Recommendations) → continuous planning loop.
 
-## 42. End-to-End Example
+## 42 End to End Example
 
 `Idea "website for church volunteers" → Nexplan asks questions → Defined → Product Plan → "Define MVP" → MVP features → [Convert to Project] → Project Plan → [Generate Roadmap] → Milestones → [Generate Tasks] → Execute → "Remove attendance from MVP" → Plan updates + decision logged.`
 
 ## 43. Brand
 
-- **Name:** Nexplan — Next + Plan
-- **Meaning:** Your next plan starts as text. You write what you're thinking; Nexplan structures it.
-- **Tagline:** Think it. Plan it. Build it.
-- **Positioning:** From thought to execution.
-- **Description:** Nexplan is an open-source AI workspace that turns ideas into structured products, projects, roadmaps, and actionable plans.
+• **Name:** Nexplan — Next + Plan
+• **Meaning:** Your next plan starts as text. You write what you're thinking; Nexplan structures it.
+• **Tagline:** Think it. Plan it. Build it.
+• **Positioning:** From thought to execution.
+• **Description:** Nexplan is an opensource AI workspace that turns ideas into structured products, projects, roadmaps, and actionable plans.
 
 ## 44. Repository
 
 **GitHub:** `franklinalegu/nexplan`
-**Description:** An open-source AI workspace for turning raw ideas into products, projects, roadmaps, and actionable plans.
+**Description:** An opensource AI workspace for turning raw ideas into products, projects, roadmaps, and actionable plans.
 **Domain:** `nexplan.app` (public hosted instance)
 
 ## 45. Core Principle
@@ -322,12 +322,12 @@ Nexplan understands WHAT (Product), WHY (Problem), WHO (Users), HOW (Solution), 
 
 **Core promise:** Nexplan doesn't just help you manage projects that already exist. It helps you figure out what the project should be in the first place.
 
----
+
 
 ### Rebrand Notes (PlanText → Nexplan)
 
 | Old | New |
-|-----|-----|
+|||
 | PlanText | Nexplan |
 | Plan + Text | Next + Plan |
 | plantext.app | nexplan.app |
@@ -335,7 +335,7 @@ Nexplan understands WHAT (Product), WHY (Problem), WHO (Users), HOW (Solution), 
 
 All concepts, workflows, and architecture unchanged — only naming/branding updated. No code changes required beyond string replacement.
 
----
+
 
 ## Getting Started (MVP v0.1)
 
@@ -345,7 +345,7 @@ pnpm dev        # http://localhost:3000
 pnpm build
 ```
 
-Stack: Next.js 16 + Tailwind 4 + TypeScript. Local-first (localStorage) — Supabase + AI backend next (see `src/lib/mock-ai.ts`).
+Stack: Next.js 16 + Tailwind 4 + TypeScript. Localfirst (localStorage) — Supabase + AI backend next (see `src/lib/mockai.ts`).
 
 ### Project Structure
 ```
@@ -353,5 +353,5 @@ src/app/page.tsx        → Dashboard (Capture → list + filter)
 src/app/ideas/[id]/page → Workspace (Idea/Product/Project/Roadmap/Tasks + Think With Me)
 src/lib/types.ts        → Core entities
 src/lib/storage.ts      → localStorage CRUD
-src/lib/mock-ai.ts      → ponytail: naive heuristics, replace with /api/plan LLM
+src/lib/mockai.ts      → ponytail: naive heuristics, replace with /api/plan LLM
 ```
